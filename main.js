@@ -86,17 +86,17 @@ manyMaterialsArray.forEach(printCurrentMaterials); //calls the printfunction on 
 
 //6. filter by how many were made by their sellers
 
-var handMadeArray = items.filter(handMadeFunction);
+var handMadeArray = items.filter(handMadeFunction); // filter
 
 function handMadeFunction(items){
-    if(items.who_made == "i_did") {
+    if(items.who_made == "i_did") { // check to see if handmade
       return true;
     } else {
       return false;
     }
 }
 
-console.log(handMadeArray.length + " items were made by their sellers.");
+console.log(handMadeArray.length + " items were made by their sellers."); //print number of items
 
 
 
